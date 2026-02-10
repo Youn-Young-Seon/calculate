@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(gcc:*)",
+      "Bash(where:*)",
+      "Bash(where gcc.exe:*)",
+      "Bash(winget:*)",
+      "Bash(C:msys64msys2_shell.cmd -defterm -here -no-start -mingw64 -c \"pacman -Sy --noconfirm mingw-w64-x86_64-gcc\")",
+      "Bash(test:*)",
+      "Bash(/c/msys64/usr/bin/bash.exe -lc \"pacman -Sy --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-make\")",
+      "Bash(/c/msys64/mingw64/bin/gcc.exe:*)",
+      "Bash(export PATH=\"/c/msys64/mingw64/bin:$PATH\")",
+      "Bash(make:*)",
+      "Bash(mingw32-make:*)",
+      "Bash(./build/app.exe)",
+      "Bash(./build/test_calculator.exe:*)",
+      "Bash(tree:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}
