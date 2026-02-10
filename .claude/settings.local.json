@@ -16,7 +16,9 @@
       "Bash(./build/app.exe)",
       "Bash(./build/test_calculator.exe:*)",
       "Bash(tree:*)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(cmake:*)",
+      "Bash(C:/msys64/mingw64/bin/gcc.exe:*)"
     ]
   }
 }

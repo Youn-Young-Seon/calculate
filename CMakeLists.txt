@@ -19,6 +19,9 @@ include_directories(include)
 # 라이브러리 생성
 add_library(calculator_lib STATIC
     src/calculator.c
+    src/dynamic_array.c
+    src/csv_parser.c
+    src/tcp_server.c
 )
 
 # 실행 파일
@@ -27,6 +30,19 @@ add_executable(app
 )
 
 target_link_libraries(app calculator_lib)
+
+# TCP 에코 서버 실행 파일
+add_executable(tcp_server
+    src/server_main.c
+)
+
+target_link_libraries(tcp_server calculator_lib)
+
+# Windows에서 Winsock 라이브러리 링크
+if(WIN32)
+    target_link_libraries(tcp_server ws2_32)
+    target_link_libraries(calculator_lib ws2_32)
+endif()
 
 # 테스트 활성화
 enable_testing()
