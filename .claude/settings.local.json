@@ -18,7 +18,8 @@
       "Bash(tree:*)",
       "Bash(echo:*)",
       "Bash(cmake:*)",
-      "Bash(C:/msys64/mingw64/bin/gcc.exe:*)"
+      "Bash(C:/msys64/mingw64/bin/gcc.exe:*)",
+      "Bash(g++:*)"
     ]
   }
 }
